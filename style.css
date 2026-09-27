@@ -1,0 +1,29 @@
+body {
+    background : bisque;
+}
+h1 {
+    background-color: aqua;
+    font-size: 20px;
+    font-family: 'verdana' , 'sans-self';
+    color: red;
+    border: 5px solid #a61c1c;
+}
+p {
+    font-size: 22px;
+    font-family: 'comoc sans ms';
+    background-color: darkred;
+}
+h2{
+    background-color: hotpink;
+    color: blue;
+    border: 1px solid #a61c1c;
+    text-aling: justify;
+    font-size: 25px;
+    font-family: 'agency fb';
+    border-radius: 6px;
+}
+#titulo {
+    color: blue;
+    text-align: center;
+    font-size: 40px;
+}
