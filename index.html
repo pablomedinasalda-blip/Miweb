@@ -1,18 +1,256 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
+<!doctype html>  <!--Indica que el documento utiliza HTML5.-->
+<html lang="es">  <!--Es el elemento principal que contiene toda la página.-->
+
+<head>  <!--Contiene información de configuración de la página.-->
+    <meta charset="UTF-8"> <!--Define información adicional como caracteres y configuración de pantalla.-->
+
     <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+          content="width=device-width, initial-scale=1.0">
+
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="style.css">
-    <title>Mi pagina web</title>
-    <link rel="icon" type="image/png" href="./img/favicon.png">
+
+    <link rel="stylesheet" href="style.css">  <!--Permite conectar archivos externos, como CSS y favicon.-->
+
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">  <!--Permite conectar archivos externos, como CSS y favicon.-->
+
+    <title>Mi primera web</title>  <!--Define el título que aparece en la pestaña del navegador.-->>
 </head>
-<body>
-<h1 id="titulo">
-    lorem ipsum dolor sit amet, consectetur adipisicing
-</h1>
+
+<body>  <!--Contiene todo el contenido visible de la pagina-->
+
+<!-- ENCABEZADO -->
+<header>   <!--Define el encabezado de la página.-->
+    <h1 id="titulo">Federación Colombiana de Fútbol</h1>  <!--Título principal.-->
+    <p>Pasión, fútbol y orgullo colombiano</p>  <!--Define un párrafo.-->
+</header>
+
+
+<!-- BARRA DE NAVEGACIÓN -->
+<nav>   <!--Define la sección de navegación.-->
+    <ul class="menu">  <!--Crea una lista no ordenada.-->
+        <li><a href="#inicio">Inicio</a></li> <!--Representa un elemento de una lista.-->
+        <li><a href="#seleccion">Selección Colombia</a></li> <!--(a)Crea enlaces.-->
+        <li><a href="#noticias">Noticias</a></li>
+        <li><a href="#video">Video</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+    </ul>
+</nav>
+
+
+<!-- CONTENIDO PRINCIPAL -->
+<main>   <!--Contiene el contenido principal de la página.-->
+
+    <!-- INICIO -->
+    <section id="inicio"> <!--Divide el contenido en diferentes secciones.-->
+
+        <h2>Bienvenidos a la Federación Colombiana de Fútbol</h2> <!--Subtítulo de segundo nivel.-->
+
+        <img src="img/colombia.jpg"
+             alt="Selección Colombia"
+             class="imagen-principal">
+
+        <p>  <!--Define un párrafo.-->
+            La Federación Colombiana de Fútbol representa al fútbol
+            colombiano y promueve el desarrollo de este deporte en el país.
+        </p>
+
+        <p>  <!--Define un párrafo.-->
+            La Selección Colombia representa al país en diferentes
+            competencias internacionales.
+        </p>
+
+    </section>
+
+
+    <br>
+
+
+    <!-- SELECCIÓN COLOMBIA -->
+    <section id="seleccion">  <!--Divide el contenido en diferentes secciones.-->
+
+        <h2>Selección Colombia</h2> <!--Subtítulo de segundo nivel.-->
+
+        <h3>Selección Masculina</h3> <!--Título de tercer nivel.-->
+
+        <p>  <!--Define un párrafo.-->
+            La Selección Colombia masculina participa en diferentes
+            torneos internacionales y representa los colores de nuestro país.
+        </p>
+
+        <h4>Jugadores</h4> <!--Título de cuarto nivel-->
+
+        <p>  <!--Define un párrafo.-->
+            Colombia cuenta con jugadores que participan en diferentes
+            clubes nacionales e internacionales.
+        </p>
+
+        <h5>Entrenamiento</h5> <!--Título de quinto nivel.-->
+
+        <p>  <!--Define un párrafo.-->
+            Los jugadores realizan entrenamientos para prepararse para
+            sus próximos partidos.
+        </p>
+
+        <h6>Información</h6> <!--Título de sexto nivel.-->
+
+        <p>  <!--Define un párrafo.-->
+            Consulta las novedades y actividades relacionadas con la selección.
+        </p>
+
+    </section>
+
+
+    <br>
+
+
+    <!-- NOTICIAS -->
+    <section id="noticias"> <!--Divide el contenido en diferentes secciones.-->
+
+        <h2>Noticias</h2> <!--Subtítulo de segundo nivel.-->
+
+        <div class="noticia"> <!--Agrupa elementos para organizarlos y aplicarles estilos.-->
+
+            <h3>Próximos partidos</h3>
+
+            <p>  <!--Define un párrafo.-->
+                La Selección Colombia continúa su preparación para sus
+                próximos compromisos internacionales.
+            </p>
+
+            <button>Ver noticias</button>
+
+        </div>
+
+
+        <div class="noticia"> <!--Agrupa elementos para organizarlos y aplicarles estilos.-->
+
+            <h3>Fútbol colombiano</h3>
+
+            <p>  <!--Define un párrafo.-->
+                El fútbol colombiano continúa desarrollándose con
+                diferentes competencias y categorías.
+            </p>
+
+            <button>Más información</button>
+
+        </div>
+
+    </section>
+
+
+    <br>
+
+
+    <!-- VIDEO -->
+    <section id="video"> <!--Divide el contenido en diferentes secciones.-->
+
+        <h2>Video</h2>
+
+        <p>Conoce más sobre el fútbol colombiano:</p>  <!--Define un párrafo.-->
+
+        <video controls width="600">
+
+            <source src="video/futbol.mp4" type="video/mp4"> <!--Indica la fuente del video.-->
+
+            Tu navegador no permite reproducir este video.
+
+        </video>
+
+    </section>
+
+
+    <br>
+
+
+    <!-- TABLA -->
+    <section> <!--Divide el contenido en diferentes secciones.-->
+
+        <h2>Próximos partidos</h2>
+
+        <table> <!--Crea una tabla.-->
+
+            <tr>  <!--Crea una fila de una tabla.-->
+                <th>Fecha</th> <!--Define una celda de encabezado.-->
+                <th>Partido</th>
+                <th>Competencia</th>
+            </tr>
+
+            <tr>  <!--Crea una fila de una tabla.-->
+                <td>10/10/2026</td>  <!--Define una celda de información.-->
+                <td>Colombia vs Brasil</td>
+                <td>Eliminatorias</td>
+            </tr>
+
+            <tr>  <!--Crea una fila de una tabla.-->
+                <td>15/10/2026</td>  <!--Define una celda de información.-->
+                <td>Colombia vs Argentina</td>
+                <td>Eliminatorias</td>
+            </tr>
+
+            <tr>  <!--Crea una fila de una tabla.-->
+                <td>20/11/2026</td>  <!--Define una celda de información.-->
+                <td>Colombia vs Perú</td>
+                <td>Amistoso</td>
+            </tr>
+
+        </table>
+
+    </section>
+
+
+    <br>
+
+
+    <!-- FORMULARIO -->
+    <section id="contacto">  <!--Divide el contenido en diferentes secciones.-->
+
+        <h2>Formulario de contacto</h2>
+
+        <form>  <!--Crea un formulario.-->
+
+            <div>  <!--Agrupa elementos para organizarlos y aplicarles estilos.-->
+                <label for="nombre">Nombre:</label>  <!--Identifica o describe un campo del formulario.-->
+                <input type="text" id="nombre" name="nombre"> <!--Permite introducir información.-->
+            </div>
+
+            <br>
+
+            <div>  <!--Agrupa elementos para organizarlos y aplicarles estilos.-->
+                <label for="correo">Correo:</label> <!--Identifica o describe un campo del formulario.-->
+                <input type="email" id="correo" name="correo">  <!--Permite introducir información.-->
+            </div>
+
+            <br>
+
+            <div>  <!--Agrupa elementos para organizarlos y aplicarles estilos.-->
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje"></textarea>  <!--Permite escribir textos más largos.-->
+            </div>
+
+            <br>
+
+            <button type="submit">Enviar</button>  <!--Crea un botón.-->
+
+        </form>
+
+    </section>
+
+</main>
+
+
+<!-- PIE DE PÁGINA -->
+<footer>  <!--Define el pie de página.-->
+
+    <p>  <!--Define un párrafo.-->
+        Federación Colombiana de Fútbol
+    </p>
+
+    <p>  <!--Define un párrafo.-->
+        Página web educativa
+    </p>
+
+</footer>
 
 </body>
 </html>
+
